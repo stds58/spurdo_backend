@@ -18,12 +18,18 @@ DEBUG = get_debug()
 ALLOWED_HOSTS = os.getenv('ALLOWED_HOST').split(',')
 
 INSTALLED_APPS = [
+    # django
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # apps
+
+    # module
+    'corsheaders',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -94,5 +100,8 @@ STATIC_URL = 'static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
 ]
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+CORS_ALLOW_ALL_ORIGINS = True

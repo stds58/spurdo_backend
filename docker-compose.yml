@@ -36,6 +36,15 @@ services:
         retries: 3
       networks:
         - dev
+# Для девопса раздокументировать
+#  nginx:
+#    extends:
+#      service: nginx
+#      file: ./nginx/nginx-compose.yml
+#    depends_on:
+#      - backend-django
+#    networks:
+#      - dev
 volumes:
   postgres_data:
 networks:
