@@ -23,7 +23,7 @@ services:
       environment:
         - POSTGRES_DB=${DB_NAME}
         - POSTGRES_USER=${DB_USER}
-        - POSTGRES_PASSWORD=&{DB_PASSWORD}
+        - POSTGRES_PASSWORD=${DB_PASSWORD}
       ports:
         - "${CONNECT_TO_DB_LOCAL}:${DB_PORT}"
       volumes:
