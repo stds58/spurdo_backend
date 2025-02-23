@@ -22,7 +22,7 @@
 
 > docker compose up --build - запуск docker контейнера
 
-> docker compose exec -it backend-django /bin/sh - проваливаемся в файловую систему docker'a
+> docker compose exec -it django_back bash или /bin/sh - проваливаемся в файловую систему docker'a
 
 > docker compose down - сбросить контейнер
  

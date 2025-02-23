@@ -2,7 +2,7 @@ FROM python:3.12-slim
 
 RUN apt-get update && apt-get clean && rm -rf /var/lib/apt/lists/*
 
-WORKDIR /user/src/app
+WORKDIR /usr/src/app
 
 COPY req.txt ../req.txt
 
