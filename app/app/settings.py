@@ -15,7 +15,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 
 DEBUG = get_debug()
 
-ALLOWED_HOSTS = os.getenv('ALLOWED_HOST').split(',')
+ALLOWED_HOST = os.getenv('ALLOWED_HOST').split(',')
 
 INSTALLED_APPS = [
     # django
